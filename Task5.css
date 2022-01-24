@@ -1,0 +1,139 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, 'Cairo';
+    background-color: rgb(249 241 225);
+
+}
+
+.container{
+  
+    background-color: rgb(249 241 225);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.chatbox {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*header contain user info*/
+.header{
+    background-color: rgb(82, 82, 82);
+    display: flex;
+    padding: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+.header img {
+    border-radius: 50%;
+    border: 2px solid grey;
+    width: 15%;
+}
+
+.header .browsername {
+    font-size: 26px;
+    font-weight: 600;
+}
+.header .subtitle {
+    font-size: 16px;
+}
+.header .browserinfo {
+    color: white;
+    padding-left: 20px;
+}
+
+
+/*chat info*/
+#chat-page {
+    background-color: darkgray;
+    max-height: 400px;
+    padding: 10px 0;
+    overflow-y: scroll;
+}
+
+  .chatboxborder {
+    background-color: darkgray;
+    display: flex;
+    padding: 0 20px;
+    max-width: 450px;
+      flex-direction: column;}      
+
+  img#user1 {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 2px;
+  }
+  img#user2 {
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 2px;
+  }
+p.smessage, p#rmessage{
+  padding: 10px;
+  border: none;
+  background: azure;
+  text-align: center;
+  border-radius: 60px;
+  word-break: break-all;
+  display: flex;
+  justify-content: flex-end;
+  float: left;
+}
+div#info {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+}
+.sendmessages,.sendmessages1 {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+padding-bottom: 6px;
+}
+
+.receivemessages ,.receivemessages1{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+padding-bottom: 6px;
+
+}
+
+/*form info*/
+.messageactions{
+    background-color: rgb(82, 82, 82);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 10px;
+    border-radius: 0 0 10px 10px;
+}
+form {
+    display: flex;
+    padding: 10px;
+}
+
+form #message{
+    width: 300px;
+    height: 50px;
+    background-color: #141414;
+    border: none;
+    color: #e6eaf4;
+    padding: 5px 8px;
+}
+
+form button{
+    padding: 5px;
+    background-color: #141414;
+    color: #ffff;
+    border: none;
+    border-left:2px solid rgb(58, 58, 58);
+
+}
